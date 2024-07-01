@@ -210,7 +210,7 @@ def janela_resultado(resultado):
 
 # Variáveis de controle de janelas
 janela1= criar_janela_inicial()
-janela2 =None #entrar ou voltar
+janela2 = None #entrar ou voltar
 janela3 =None #cadastro
 janela4 =None #menu de operaçoes
 janela5 =None #
@@ -260,15 +260,14 @@ while True:
             window.close()
             
     if window == janela2 and evento == 'Voltar':
-        janela2.hide()
+        janela2.close()
         janela1.un_hide()
-
     if window == janela3 and evento == 'Voltar':
-        janela3.hide()
+        janela3.close()
         janela2.un_hide()
     
     if window == janela4 and evento == 'Voltar':
-        janela4.hide()
+        janela4.close()
         janela2.un_hide()
 
     if window == janela8 and evento == 'Voltar':
